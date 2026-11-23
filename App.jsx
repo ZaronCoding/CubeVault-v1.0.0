@@ -156,7 +156,8 @@ function App() {
             gridTemplateRows: '50px auto',
             backgroundColor: 'black',
             color: 'white',
-            width: '100%'
+            width: '100%',
+            fontFamily: 'arial'
         }}>
             {page !== 'home' && (
                 <div style={{
