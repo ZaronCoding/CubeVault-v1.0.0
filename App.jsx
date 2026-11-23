@@ -145,8 +145,7 @@ function App() {
             const s = await randomScrambleForEvent(event)
             return s.toString()
         } catch (e) {
-            console.log("Scramble Fehler:", e)
-            return "Fehler - nochmal versuchen"
+            return "FEHLER: " + e.message
         }
     }
   
