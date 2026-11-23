@@ -140,7 +140,7 @@ function App() {
 }
   
     async function genScramble() {
-        const { randomScrambleForEvent } = await import("https://cdn.cubing.net/js/cubing/scramble/index.js")
+        const { randomScrambleForEvent } = await import("https://cdn.cubing.net/v0/js/cubing/scramble")
         const s = await randomScrambleForEvent(event)
         return s.toString()
     }
