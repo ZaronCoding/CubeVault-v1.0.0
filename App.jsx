@@ -141,7 +141,7 @@ function App() {
   
     async function genScramble() {
         try {
-            const { randomScrambleForEvent } = await import("https://cdn.jsdelivr.net/npm/cubing@0.66.1/+esm")
+            const { randomScrambleForEvent } = await import(/* @vite-ignore */ "https://cdn.jsdelivr.net/npm/cubing@0.66.1/+esm")
             const s = await randomScrambleForEvent(event)
             return s.toString()
         } catch (e) {
