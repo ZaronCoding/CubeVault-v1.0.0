@@ -138,7 +138,7 @@ function App() {
         const meanInMs = sum / onlyNumbers.length
         
         return formatTime(meanInMs)
-}
+    }
   
     async function genScramble() {
         try {
