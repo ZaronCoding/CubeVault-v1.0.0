@@ -140,13 +140,9 @@ function App() {
     }
   
     async function genScramble() {
-        try {
-            const { randomScrambleForEvent } = await import(/* @vite-ignore */ "https://cdn.jsdelivr.net/npm/cubing@0.66.1/+esm")
-            const s = await randomScrambleForEvent(event)
-            return s.toString()
-        } catch (e) {
-            return "FEHLER: " + e.message
-        }
+        const r = await fetch(`/api/scramble?event=${event}`)
+        const data = await r.json()
+        return data.scramble || "FEHLER: " + data.error
     }
   
     async function preloadScramble() {
