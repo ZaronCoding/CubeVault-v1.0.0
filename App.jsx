@@ -167,7 +167,7 @@ function App() {
         setScramble(nextScrambleRef.current)
         nextScrambleRef.current = await genScramble()
     }
-  
+    lockScreen()
     return (
         <div style={{
             display: 'grid',
