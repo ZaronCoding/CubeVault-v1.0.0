@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { randomScrambleForEvent } from 'cubing/scramble'
 import Timer from './Timer'
 import Logo from './Logo'
 import Scramble from './Scramble'
@@ -140,9 +141,13 @@ function App() {
 }
   
     async function genScramble() {
-        const { randomScrambleForEvent } = await import("https://cdn.jsdelivr.net/npm/cubing@0.66.1/dist/lib/cubing/scramble/index.js")
-        const s = await randomScrambleForEvent(event)
-        return s.toString()
+        try {
+            const s = await randomScrambleForEvent(event)
+            return s.toString()
+        } catch (e) {
+            console.log("Scramble Fehler:", e)
+            return "Fehler - nochmal versuchen"
+        }
     }
   
     async function preloadScramble() {
