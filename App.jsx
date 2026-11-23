@@ -40,6 +40,24 @@ function App() {
     })
     const nextScrambleRef = useRef(null)
     const isLoadingRef = useRef(false)
+    const wakeLockRef = useRef(null)
+
+    async function lockScreen() {
+        try {
+            if ("wakeLock" in navigator) {
+                wakeLockRef.current = await navigator.wakeLock.request("screen")
+            }
+        } catch (e) {
+            
+        }
+    }
+    
+    function unlockScreen() {
+        if (wakeLockRef.current) {
+            wakeLockRef.current.release()
+            wakeLockRef.current = null
+        }
+    }
   
     useEffect(() => {
         async function aLittleAsyncFunction() {
