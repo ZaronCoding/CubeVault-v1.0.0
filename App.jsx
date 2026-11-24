@@ -12,6 +12,7 @@ import Tutorials from './Tutorials'
 import './App.css'
 
 function App() {
+    const version = 'v1.0.0'
     const [scramble, setScramble] = useState('Loading...')
     const [page, setPage] = useState('home')
     const [algSet, setAlgSet] = useState('PLL')
@@ -206,7 +207,7 @@ function App() {
                     backgroundColor: 'black',
                     height: '100dvh'
                 }}>
-                    <HomePage onTimerClick={() => setPage('timer')} onAlgsClick={() => setPage('algorithms')} onProgressionClick={() => setPage('progression')} onTutorialsClick={() => setPage('tutorials')} />
+                    <HomePage onTimerClick={() => setPage('timer')} onAlgsClick={() => setPage('algorithms')} onProgressionClick={() => setPage('progression')} onTutorialsClick={() => setPage('tutorials')} version={version} />
                 </div>
             )}
             {page === 'timer' && (
