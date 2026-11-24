@@ -10,7 +10,7 @@ function HomePage({ onTimerClick, onAlgsClick, onProgressionClick, onTutorialsCl
             backgroundColor: 'black'
         }}>
             <div style={{
-                height: '25vh',
+                height: '28vh',
                 margin: '0px',
                 marginBottom: '5px'
             }}>
@@ -40,7 +40,7 @@ function HomePage({ onTimerClick, onAlgsClick, onProgressionClick, onTutorialsCl
             <div style={{
                 display: 'grid',
                 gridTemplateRows: '1fr 1fr 1fr 1fr',
-                height: '75vh',
+                height: '72vh',
                 overflowY: 'auto'
             }}>
                 <div style={{
