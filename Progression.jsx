@@ -38,10 +38,7 @@ function Progression() {
     }, [progress])
     
     return (
-        <div style={{
-            height: '90vh',
-            overflowY: 'auto'
-        }}>
+        <div className='page-scroll'>
             <ProgressionLevel title="Beginner's Method" subtitle='Solve your first Cube' number={0} isCompleted={getIsCompleted(0)} isUnlocked={getIsUnlocked(0)} onCircleClick={() => handleCircleClick(0)} />
             <ProgressionLevel title="Tips for Beginner's Method" subtitle='Get more efficient with the Method' number={1} isCompleted={getIsCompleted(1)} isUnlocked={getIsUnlocked(1)} onCircleClick={() => handleCircleClick(1)} />
             <ProgressionLevel title='Beginner CFOP' subtitle='Cross, Intuitive F2L, 4-Look-LL' number={2} isCompleted={getIsCompleted(2)} isUnlocked={getIsUnlocked(2)} onCircleClick={() => handleCircleClick(2)} />
@@ -58,16 +55,3 @@ function Progression() {
 }
 
 export default Progression
-
-
-
-
-
-
-
-
-
-
-
-
-

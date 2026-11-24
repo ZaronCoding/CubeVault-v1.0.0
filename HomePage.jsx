@@ -2,15 +2,10 @@ import HomeCard from './HomeCard'
 
 function HomePage({ onTimerClick, onAlgsClick, onProgressionClick, onTutorialsClick }) {
     return (
-        <div style={{
-            display: 'grid',
-            gridTemplateRows: 'auto auto auto auto',
-            height: '100dvh',
-            overflowY: 'auto',
+        <div className='home-page' style={{
             backgroundColor: 'black'
         }}>
-            <div style={{
-                height: '28dvh',
+            <div className='home-page__header' style={{
                 margin: '0px',
                 marginBottom: '5px'
             }}>
@@ -37,10 +32,8 @@ function HomePage({ onTimerClick, onAlgsClick, onProgressionClick, onTutorialsCl
                     textShadow: '0 0 20px #576622'
                 }}>Unlock Your Speed!</p>
             </div>
-            <div style={{
+            <div className='home-page__cards' style={{
                 display: 'grid',
-                gridTemplateRows: '1fr 1fr 1fr 1fr',
-                height: '72dvh',
                 overflowY: 'auto'
             }}>
                 <div style={{
@@ -72,17 +65,3 @@ function HomePage({ onTimerClick, onAlgsClick, onProgressionClick, onTutorialsCl
 }
 
 export default HomePage
-
-
-
-
-
-
-
-
-
-
-
-
-
-

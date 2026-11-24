@@ -1,8 +1,6 @@
-
-
 function Tutorials() {
     return (
-        <div style={{
+        <div className='page-scroll' style={{
             display: 'flex',
             backgroundColor: 'black',
             color: 'yellow',
@@ -10,8 +8,6 @@ function Tutorials() {
             alignItems: 'center',
             justifyContent: 'center',
             textAlign: 'center',
-            height: '90vh',
-            flex: 1,
             margin: 0,
             flexDirection: 'column',
             gap: '3px'
