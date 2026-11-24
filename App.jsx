@@ -361,7 +361,7 @@ function App() {
                     </div>
                     {algSet === 'OLL' && (
                         <div style={{
-                            maxHeight: '80vh',
+                            maxHeight: '85vh',
                             overflowY: 'auto'
                         }}>
                             <AlgCard alg="R U R' U R U2' R'" name='Cross 1' algSet='OLL' />
@@ -425,7 +425,7 @@ function App() {
                     )}
                     {algSet === 'PLL' && (
                         <div style={{
-                            maxHeight: '80vh',
+                            maxHeight: '85vh',
                             overflowY: 'auto'
                         }}>
                             <AlgCard alg="R U R' U' R' F R2 U' R' U' R U R' F'" name='T-Perm' algSet='PLL' />
@@ -453,7 +453,7 @@ function App() {
                     )}
                     {algSet === 'PBL' && (
                         <div style={{
-                            maxHeight: '80vh',
+                            maxHeight: '85vh',
                             overflowY: 'auto'
                         }}>
                             <AlgCard alg="R2 U' B2 U2' R2' U' R2" name='adjacent-adjacent' algSet='PBL' />
