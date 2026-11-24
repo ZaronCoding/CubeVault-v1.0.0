@@ -182,7 +182,7 @@ function App() {
                 <div style={{
                     display: 'grid',
                     gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr',
-                    height: '10dvh',
+                    height: '6dvh',
                     backgroundColor: 'black',
                     color: 'white',
                     textAlign: 'center',
@@ -213,7 +213,7 @@ function App() {
                 <div onContextMenu={(e) => e.preventDefault()} style={{
                     backgroundColor: 'black',
                     color: 'white',
-                    height: '90dvh',
+                    height: '94dvh',
                     display: 'grid',
                     gridTemplateRows: 'auto 1fr auto',
                     userSelect: 'none',
@@ -342,11 +342,11 @@ function App() {
                 </div>
             )}
             {page === 'algorithms' && (
-                <div style={{ height: '90dvh' }}>
+                <div style={{ height: '94dvh' }}>
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: '1fr 1fr 1fr',
-                        height: '10dvh',
+                        height: '6dvh',
                         backgroundColor: 'black',
                         color: 'white',
                         textAlign: 'center',
@@ -364,7 +364,7 @@ function App() {
                     </div>
                     {algSet === 'OLL' && (
                         <div style={{
-                            height: '80dvh',
+                            height: '88dvh',
                             overflowY: 'auto'
                         }}>
                             <AlgCard alg="R U R' U R U2' R'" name='Cross 1' algSet='OLL' />
@@ -428,7 +428,7 @@ function App() {
                     )}
                     {algSet === 'PLL' && (
                         <div style={{
-                            height: '80dvh',
+                            height: '88dvh',
                             overflowY: 'auto'
                         }}>
                             <AlgCard alg="R U R' U' R' F R2 U' R' U' R U R' F'" name='T-Perm' algSet='PLL' />
@@ -456,7 +456,7 @@ function App() {
                     )}
                     {algSet === 'PBL' && (
                         <div style={{
-                            height: '80dvh',
+                            height: '88dvh',
                             overflowY: 'auto'
                         }}>
                             <AlgCard alg="R2 U' B2 U2' R2' U' R2" name='adjacent-adjacent' algSet='PBL' />
@@ -469,12 +469,12 @@ function App() {
                 </div>
             )}
             {page === 'progression' && (
-                <div style={{ height: '90dvh' }}>
+                <div style={{ height: '94dvh' }}>
                     <Progression />
                 </div>
             )}
             {page === 'tutorials' && (
-                <div style={{ height: '90dvh' }}>
+                <div style={{ height: '94dvh' }}>
                     <Tutorials />
                 </div>
             )}
