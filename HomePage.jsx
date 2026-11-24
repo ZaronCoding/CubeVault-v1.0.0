@@ -35,7 +35,8 @@ function HomePage({ onTimerClick, onAlgsClick, onProgressionClick, onTutorialsCl
                     fontSize: '10px',
                     textAlign: 'right',
                     paddingRight: '10px',
-                    color: '#888888'
+                    color: '#888888',
+                    margin: 0
                 }}>{version}</p>
             </div>
             <div className='home-page__cards' style={{
