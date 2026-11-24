@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import Timer from './Timer'
+import Timer from './Timer' 
 import Logo from './Logo'
 import Scramble from './Scramble'
 import Session from './Session'
