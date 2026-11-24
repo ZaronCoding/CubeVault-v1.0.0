@@ -182,7 +182,7 @@ function App() {
                 <div style={{
                     display: 'grid',
                     gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr',
-                    height: '50px',
+                    height: 'auto',
                     backgroundColor: 'black',
                     color: 'white',
                     textAlign: 'center',
@@ -346,7 +346,7 @@ function App() {
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: '1fr 1fr 1fr',
-                        height: '50px',
+                        height: 'auto',
                         backgroundColor: 'black',
                         color: 'white',
                         textAlign: 'center',
