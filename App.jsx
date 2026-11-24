@@ -177,7 +177,7 @@ function App() {
             width: '100%',
             fontFamily: 'arial',
             height: '100dvh'
-        }}>
+        }} translate='no'>
             {page !== 'home' && (
                 <div style={{
                     display: 'grid',
