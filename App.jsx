@@ -213,7 +213,7 @@ function App() {
                 <div onContextMenu={(e) => e.preventDefault()} style={{
                     backgroundColor: 'black',
                     color: 'white',
-                    height: '93dvh',
+                    height: 'auto',
                     display: 'grid',
                     gridTemplateRows: 'auto 1fr auto',
                     userSelect: 'none',
@@ -342,11 +342,11 @@ function App() {
                 </div>
             )}
             {page === 'algorithms' && (
-                <div style={{ height: '93dvh' }}>
+                <div style={{ display: 'grid', gridTemplateRows: 'auto' }}>
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: '1fr 1fr 1fr',
-                        height: '7dvh',
+                        height: '50px',
                         backgroundColor: 'black',
                         color: 'white',
                         textAlign: 'center',
@@ -469,12 +469,12 @@ function App() {
                 </div>
             )}
             {page === 'progression' && (
-                <div style={{ height: '93dvh' }}>
+                <div style={{ display: 'grid', gridTemplateRows: 'auto' }}>
                     <Progression />
                 </div>
             )}
             {page === 'tutorials' && (
-                <div style={{ height: '93dvh' }}>
+                <div style={{ display: 'grid', gridTemplateRows: 'auto'' }}>
                     <Tutorials />
                 </div>
             )}
