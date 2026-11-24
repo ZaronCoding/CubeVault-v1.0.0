@@ -181,7 +181,7 @@ function App() {
                 <div style={{
                     display: 'grid',
                     gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr',
-                    maxHeight: '50px',
+                    height: '10vh',
                     backgroundColor: 'black',
                     color: 'white',
                     textAlign: 'center',
@@ -211,6 +211,7 @@ function App() {
                 <div onContextMenu={(e) => e.preventDefault()} style={{
                     backgroundColor: 'black',
                     color: 'white',
+                    height: '90vh',
                     display: 'grid',
                     gridTemplateRows: 'auto 1fr auto',
                     minHeight: '90vh',
@@ -361,7 +362,7 @@ function App() {
                     </div>
                     {algSet === 'OLL' && (
                         <div style={{
-                            maxHeight: '85vh',
+                            maxHeight: '90vh',
                             overflowY: 'auto'
                         }}>
                             <AlgCard alg="R U R' U R U2' R'" name='Cross 1' algSet='OLL' />
@@ -425,7 +426,7 @@ function App() {
                     )}
                     {algSet === 'PLL' && (
                         <div style={{
-                            maxHeight: '85vh',
+                            maxHeight: '90vh',
                             overflowY: 'auto'
                         }}>
                             <AlgCard alg="R U R' U' R' F R2 U' R' U' R U R' F'" name='T-Perm' algSet='PLL' />
@@ -453,7 +454,7 @@ function App() {
                     )}
                     {algSet === 'PBL' && (
                         <div style={{
-                            maxHeight: '85vh',
+                            maxHeight: '90vh',
                             overflowY: 'auto'
                         }}>
                             <AlgCard alg="R2 U' B2 U2' R2' U' R2" name='adjacent-adjacent' algSet='PBL' />
