@@ -57,7 +57,7 @@ function HomePage({ onTimerClick, onAlgsClick, onProgressionClick, onTutorialsCl
                 }}>
                     <HomeCard title='Why CubeVault?' message="Because you don't need 4 Websites, you just need one Vault for everything you need in your Cubing Journey (except Speedcubes). You don't need a separate website for Algorithms, a Timer and Tutorials, you just need one, and that is CubeVault." color='#008888' />
                     <HomeCard title='About the Creator' message='I am a 14-year-old Speedcuber from Germany, that achieved sub 20 in less than 9 months and has a PB Single of 9.37s. I put all my knowledge into this Website to make it possible for other Speedcubers to do the same. Good luck and have fun!' color='orange' />
-                    <HomeCard title='Special Thanks' message={"My Friend\nVideo Editing, Investor, Marketing & Design Ideas"} color='#DD01DD' />
+                    <HomeCard title='Special Thanks' message={"Co-Founder & Creative Director\nVideo Editing, Investor, Promotion & Design Ideas"} color='#DD01DD' />
                 </div>
             </div>
         </div>
