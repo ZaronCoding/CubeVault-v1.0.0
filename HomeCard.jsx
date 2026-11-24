@@ -14,7 +14,7 @@ function HomeCard({ onCardClick, title, message, color }) {
             padding: '5px',
             boxSizing: 'border-box',
             margin: '5px',
-            height: '190px'
+            height: '210px'
         }} onClick={onCardClick}>
             <h2 style={{ fontWeight: 'bold', textShadow: '0 0 10px #666666' }}>{title}</h2>
             <p style={{ fontSize: '13px', textShadow: '0 0 10px #666666' }}>{message}</p>
