@@ -5,12 +5,12 @@ function HomePage({ onTimerClick, onAlgsClick, onProgressionClick, onTutorialsCl
         <div style={{
             display: 'grid',
             gridTemplateRows: 'auto auto auto auto',
-            height: '100vh',
+            height: '100dvh',
             overflowY: 'auto',
             backgroundColor: 'black'
         }}>
             <div style={{
-                height: '28vh',
+                height: '28dvh',
                 margin: '0px',
                 marginBottom: '5px'
             }}>
@@ -40,7 +40,7 @@ function HomePage({ onTimerClick, onAlgsClick, onProgressionClick, onTutorialsCl
             <div style={{
                 display: 'grid',
                 gridTemplateRows: '1fr 1fr 1fr 1fr',
-                height: '72vh',
+                height: '72dvh',
                 overflowY: 'auto'
             }}>
                 <div style={{
