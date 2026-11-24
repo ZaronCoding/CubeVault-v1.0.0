@@ -214,7 +214,7 @@ function App() {
                     height: '90vh',
                     display: 'grid',
                     gridTemplateRows: 'auto 1fr auto',
-                    minHeight: '90vh',
+                    height: '90vh',
                     userSelect: 'none',
                     WebkitUserSelect: 'none'
                 }}>
@@ -224,7 +224,8 @@ function App() {
                         alignItems: 'center',
                         gap: '10px',
                         backgroundColor: '#111111',
-                        boxShadow: '0 0 30px #666666'
+                        boxShadow: '0 0 30px #666666',
+                        height: '15vh'
                 }}>
                         <Logo />
                         <select className='dropdown' onChange={(e) => setEvent(e.target.value)} value={event}>
