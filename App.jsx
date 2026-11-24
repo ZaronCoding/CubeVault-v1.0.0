@@ -474,7 +474,7 @@ function App() {
                 </div>
             )}
             {page === 'tutorials' && (
-                <div style={{ display: 'grid', gridTemplateRows: 'auto'' }}>
+                <div style={{ display: 'grid', gridTemplateRows: 'auto' }}>
                     <Tutorials />
                 </div>
             )}
