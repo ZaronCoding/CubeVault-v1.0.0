@@ -1,6 +1,6 @@
 import HomeCard from './HomeCard'
 
-function HomePage({ onTimerClick, onAlgsClick, onProgressionClick, onTutorialsClick }) {
+function HomePage({ onTimerClick, onAlgsClick, onProgressionClick, onTutorialsClick, version }) {
     return (
         <div className='home-page' style={{
             backgroundColor: 'black'
@@ -31,6 +31,12 @@ function HomePage({ onTimerClick, onAlgsClick, onProgressionClick, onTutorialsCl
                     fontStyle: 'italic',
                     textShadow: '0 0 20px #576622'
                 }}>Unlock Your Speed!</p>
+                <p style={{
+                    fontSize: '10px',
+                    textAlign: 'right',
+                    paddingRight: '10px',
+                    color: '#888888'
+                }}>{version}</p>
             </div>
             <div className='home-page__cards' style={{
                 display: 'grid',
