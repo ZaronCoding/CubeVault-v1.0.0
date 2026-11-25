@@ -12,7 +12,7 @@ import Tutorials from './Tutorials'
 import './App.css'
 
 function App() {
-    const version = 'v1.1.0-beta'
+    const version = 'v1.1.1-beta'
     const [scramble, setScramble] = useState('Loading...')
     const [page, setPage] = useState('home')
     const [algSet, setAlgSet] = useState('PLL')
@@ -350,7 +350,7 @@ function App() {
                             }} onClick={() => setShowPopup(true)}>Reset</p>
                         </div>
                         {showPopup && (
-                            <Popup title='Reset Session?' message='Are you sure you want to delete this session?' onConfirm={handleReset} onCancel={() => setShowPopup(false)} />
+                            <Popup title='Reset Session?' message='Are you sure you want to reset this session?' onConfirm={handleReset} onCancel={() => setShowPopup(false)} />
                         )}
                         <div style={{
                             display: 'grid',
