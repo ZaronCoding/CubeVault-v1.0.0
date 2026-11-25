@@ -12,7 +12,7 @@ function Tutorials() {
             flexDirection: 'column',
             gap: '3px'
         }}>
-            <h1>Tutorials are coming soon!</h1>
+            <h1>Tutorials are planned for v1.5.0!</h1>
             <p style={{ margin: 0 }}>- Cube Notation</p>
             <p style={{ margin: 0 }}>- Beginners Method</p>
             <p style={{ margin: 0 }}>- Tips for Beginners Method</p>
