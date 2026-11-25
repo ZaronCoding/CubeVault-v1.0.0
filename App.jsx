@@ -176,6 +176,10 @@ function App() {
         if (event === '555') return '5x5x5'
         if (event === '666') return '6x6x6'
         if (event === '777') return '7x7x7'
+        if (event === 'minx') return 'megaminx'
+        if (event === 'pyram') return 'pyraminx'
+        if (event === 'sq1') return 'square1'
+        return event
     }
     
     lockScreen()
@@ -353,9 +357,7 @@ function App() {
                             gridTemplateRows: 'auto 1fr'
                         }}>
                             <PBs pb={pb} />
-                            {(event === '222' || event === '333' || event === '444' || event === '555' || event === '666' || event === '777') && (
-                                <twisty-player style={{ width: '30dvw', height: '17dvh', margin: 0 }} experimental-setup-alg={scramble} control-panel='none' puzzle={getPuzzle()} background='#111111' visualization='3D'></twisty-player>
-                            )}
+                            <twisty-player style={{ width: '30dvw', height: '17dvh', margin: 0 }} experimental-setup-alg={scramble} control-panel='none' puzzle={getPuzzle()} background='#111111' visualization='3D'></twisty-player>
                         </div>
                     </div>
                 </div>
