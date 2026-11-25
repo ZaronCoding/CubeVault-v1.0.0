@@ -12,7 +12,7 @@ import Tutorials from './Tutorials'
 import './App.css'
 
 function App() {
-    const version = 'v1.0.0'
+    const version = 'v1.1.0-beta'
     const [scramble, setScramble] = useState('Loading...')
     const [page, setPage] = useState('home')
     const [algSet, setAlgSet] = useState('PLL')
@@ -168,6 +168,16 @@ function App() {
         setScramble(nextScrambleRef.current)
         nextScrambleRef.current = await genScramble()
     }
+
+    function getPuzzle() {
+        if (event === '222') return '2x2x2'
+        if (event === '333') return '3x3x3'
+        if (event === '444') return '4x4x4'
+        if (event === '555') return '5x5x5'
+        if (event === '666') return '6x6x6'
+        if (event === '777') return '7x7x7'
+    }
+    
     lockScreen()
     return (
         <div style={{
@@ -338,7 +348,15 @@ function App() {
                         {showPopup && (
                             <Popup title='Reset Session?' message='Are you sure you want to delete this session?' onConfirm={handleReset} onCancel={() => setShowPopup(false)} />
                         )}
-                        <PBs pb={pb} />
+                        <div style={{
+                            display: 'grid',
+                            gridTemplateRows: 'auto 1fr'
+                        }}>
+                            <PBs pb={pb} />
+                            {(event === '222' || event === '333' || event === '444' || event === '555' || event === '666' || event === '777') && (
+                                <twisty-player style={{ width: '30dvw', height: '17dvh', margin: 0 }} experimental-setup-alg={scramble} control-panel='none' puzzle={getPuzzle()} background='#111111' visualization='3D'></twisty-player>
+                            )}
+                        </div>
                     </div>
                 </div>
             )}
