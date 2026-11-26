@@ -360,7 +360,7 @@ function App() {
                                 textAlign: 'center',
                                 boxShadow: '0 0 10px #0000CC',
                                 margin: 0,
-                                fontSize: '10px'
+                                fontSize: '11px'
                             }} onClick={preloadScramble}>Next Scr.</p>
                         </div>
                         {showPopup && (
