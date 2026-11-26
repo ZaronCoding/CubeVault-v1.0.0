@@ -257,6 +257,7 @@ function App() {
                             <option value='pyram'>Pyraminx</option>
                             <option value='fto'>FTO</option>
                             <option value='clock'>Clock</option>
+                            <option value='kilominx'>Kilominx</option>
                         </select>
                         <Scramble scramble={scramble} />
                     </div>
