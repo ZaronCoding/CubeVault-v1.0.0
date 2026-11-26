@@ -359,8 +359,9 @@ function App() {
                                 borderRadius: '5px',
                                 textAlign: 'center',
                                 boxShadow: '0 0 10px #0000CC',
-                                margin: 0
-                            }} onClick={preloadScramble}>Next Scr</p>
+                                margin: 0,
+                                fontSize: '13px'
+                            }} onClick={preloadScramble}>Next Scr.</p>
                         </div>
                         {showPopup && (
                             <Popup title='Reset Session?' message='Are you sure you want to reset this session?' onConfirm={handleReset} onCancel={() => setShowPopup(false)} />
