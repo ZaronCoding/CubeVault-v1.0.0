@@ -253,11 +253,11 @@ function App() {
                             <option value='777'>7x7x7</option>
                             <option value='skewb'>Skewb</option>
                             <option value='sq1'>Square 1</option>
+                            <option value='kilominx'>Kilominx</option>
                             <option value='minx'>Megaminx</option>
                             <option value='pyram'>Pyraminx</option>
-                            <option value='fto'>FTO</option>
                             <option value='clock'>Clock</option>
-                            <option value='kilominx'>Kilominx</option>
+                            <option value='fto'>FTO</option>
                         </select>
                         <Scramble scramble={scramble} />
                     </div>
