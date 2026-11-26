@@ -349,24 +349,19 @@ function App() {
                                 boxShadow: '0 0 10px #CC0000',
                                 margin: 0
                             }} onClick={() => setShowPopup(true)}>Reset</p>
-                            <div style={{
-                                display: 'flex',
-                                alignItems: 'center'
-                            }}>
-                                <p style={{
-                                    width: '50px',
-                                    height: '20px',
-                                    alignSelf: 'center',
-                                    justifySelf: 'center',
-                                    backgroundColor: '#0000FF',
-                                    border: 'solid 2px #0000CC',
-                                    borderRadius: '5px',
-                                    textAlign: 'justify',
-                                    boxShadow: '0 0 10px #0000CC',
-                                    margin: 0,
-                                    fontSize: '11px'
-                                }} onClick={preloadScramble}>Next Scr.</p>
-                            </div>
+                            <p style={{
+                                width: '50px',
+                                height: '20px',
+                                alignSelf: 'center',
+                                justifySelf: 'center',
+                                backgroundColor: '#0000FF',
+                                border: 'solid 2px #0000CC',
+                                borderRadius: '5px',
+                                textAlign: 'center',
+                                boxShadow: '0 0 10px #0000CC',
+                                margin: 0,
+                                fontSize: '11px'
+                            }} onClick={preloadScramble}>Next Scr.</p>
                         </div>
                         {showPopup && (
                             <Popup title='Reset Session?' message='Are you sure you want to reset this session?' onConfirm={handleReset} onCancel={() => setShowPopup(false)} />
