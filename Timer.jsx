@@ -88,8 +88,12 @@ function Timer({ onStop }) {
             width: '100%',
             height: '100%',
             justifySelf: 'stretch',
-            alignSelf: 'stretch'
-        }} onPointerDown={handlePressDown} onPointerUp={handleRelease}>
+            alignSelf: 'stretch',
+            touchAction: 'none'
+        }} onPointerDown={(e) => {
+            handlePressDown()
+            e.target.setPointerCapture(e.pointerId)
+        }} onPointerUp={handleRelease}>
             <h1 style={{
                 fontSize: '60px',
                 textShadow: isReady ? '0 0 10px #00DD00, 0 0 20px #00AA00, 0 0 30px #00AA00' : isHolding ? '0 0 10px #790000, 0 0 20px #790000, 0 0 30px #790000' : '0 0 10px #777979, 0 0 20px #777979, 0 0 30px #777979',
