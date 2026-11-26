@@ -354,13 +354,13 @@ function App() {
                                 height: '20px',
                                 alignSelf: 'center',
                                 justifySelf: 'center',
-                                backgroundColor: '#880000',
-                                border: 'solid 2px #660000',
+                                backgroundColor: '#0000FF',
+                                border: 'solid 2px #0000CC',
                                 borderRadius: '5px',
                                 textAlign: 'center',
-                                boxShadow: '0 0 10px #660000',
+                                boxShadow: '0 0 10px #0000CC',
                                 margin: 0
-                            }}></p>
+                            }} onClick={preloadScramble}>Next Scr</p>
                         </div>
                         {showPopup && (
                             <Popup title='Reset Session?' message='Are you sure you want to reset this session?' onConfirm={handleReset} onCancel={() => setShowPopup(false)} />
