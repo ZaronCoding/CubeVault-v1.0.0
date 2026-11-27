@@ -12,7 +12,7 @@ import Tutorials from './Tutorials'
 import './App.css'
 
 function App() {
-    const version = 'v1.1.0' 
+    const version = 'v1.1.1' 
     const [scramble, setScramble] = useState('Loading...')
     const [page, setPage] = useState('home')
     const [algSet, setAlgSet] = useState('PLL')
@@ -192,7 +192,7 @@ function App() {
             width: '100%',
             fontFamily: 'arial',
             height: '100dvh'
-        }} translate='no'>
+        }} translate='no' className='notranslate'>
             {page !== 'home' && (
                 <div style={{
                     display: 'grid',
