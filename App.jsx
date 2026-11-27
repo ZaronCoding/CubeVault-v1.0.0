@@ -261,7 +261,7 @@ function App() {
                         </select>
                         <Scramble scramble={scramble} />
                     </div>
-                    <Timer onStop={handleStop} />
+                    <Timer onStop={handleStop} key={currentSession} />
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: '1fr 1fr 1fr',
