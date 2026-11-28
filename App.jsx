@@ -183,7 +183,7 @@ function App() {
     }
 
     function handleDelLast() {
-        setTime(time.slice(0))
+        setTime(time.pop(-1))
     }
     
     lockScreen()
