@@ -33,6 +33,7 @@ function App() {
         return formatTime(rawPb)
     })
     const [showPopup, setShowPopup] = useState(false)
+    const [showDelPopup, setShowDelPopup] = useState(false)
     const [addSession, setAddSession] = useState('')
     const [sessions, setSessions] = useState(() => {
         const savedSessions = localStorage.getItem('sessions')
@@ -377,10 +378,16 @@ function App() {
                                 textAlign: 'center',
                                 boxShadow: '0 0 10px #00CCCC',
                                 margin: 0,
-                            }} onClick={handleDelLast}>Undo</p>
+                            }} onClick={() => setShowDelPopup(true)}>Undo</p>
                         </div>
                         {showPopup && (
                             <Popup title='Reset Session?' message='Are you sure you want to reset this session?' onConfirm={handleReset} onCancel={() => setShowPopup(false)} />
+                        )}
+                        {showDelPopup && (
+                            <Popup title='Delete Last Time?' message='Are you sure you want to delete the last time?' onConfirm={() => {
+                                handleDelLast()
+                                setShowDelPopup(false)
+                            }} onCancel={() => setShowDelPopup(false)} />
                         )}
                         <div style={{
                             display: 'grid',
