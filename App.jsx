@@ -12,7 +12,7 @@ import Tutorials from './Tutorials'
 import './App.css'
 
 function App() {
-    const version = 'v1.1.2' 
+    const version = 'v1.1.3' 
     const [scramble, setScramble] = useState('Loading...')
     const [page, setPage] = useState('home')
     const [algSet, setAlgSet] = useState('PLL')
