@@ -1,3 +1,106 @@
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+#root {
+    height: 100dvh;
+}
+
+#root > div {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    height: 100dvh !important;
+    min-height: 0;
+    overflow: hidden;
+}
+
+#root > div > div {
+    box-sizing: border-box;
+    min-height: 0;
+}
+
+/* The main page switcher is the only direct child with five paragraph items. */
+#root > div > div:first-child:has(> p:nth-child(5)) {
+    flex: 0 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: center;
+    min-height: 48px;
+    height: auto !important;
+    padding: 4px 8px;
+}
+
+#root > div > div:first-child:has(> p:nth-child(5)) > p {
+    min-width: 0;
+    margin: 0;
+    padding: 8px 2px;
+    font-size: clamp(10px, 2.7vw, 13px) !important;
+    overflow-wrap: anywhere;
+}
+
+/* The active page takes the remaining height; its own lists can scroll. */
+#root > div > div:not(:first-child),
+#root > div > div:first-child:not(:has(> p:nth-child(5))) {
+    flex: 1 1 0;
+    min-height: 0;
+    height: auto !important;
+    overflow: hidden;
+}
+
+/* Algorithm tabs and their list share the available page height. */
+#root > div > div:nth-child(2) > div:has(> div[style*="overflow-y"]) {
+    display: grid !important;
+    grid-template-rows: auto minmax(0, 1fr) !important;
+    height: 100%;
+    min-height: 0;
+}
+
+#root > div > div:nth-child(2) > div:has(> div[style*="overflow-y"]) > div[style*="overflow-y"] {
+    height: 100% !important;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+/* Home content and its cards scroll within the page instead of overflowing it. */
+.home-page {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    width: 100%;
+    height: 100% !important;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.home-page__header {
+    height: auto !important;
+    min-height: 0;
+}
+
+.home-page__cards {
+    grid-template-rows: auto auto auto !important;
+    height: auto !important;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+.page-scroll {
+    width: 100%;
+    height: 100% !important;
+    min-height: 0;
+    overflow-y: auto;
+}
+
 .dropdown {
     appearance: none;
     height: 24px;
