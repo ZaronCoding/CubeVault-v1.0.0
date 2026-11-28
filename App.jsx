@@ -12,7 +12,7 @@ import Tutorials from './Tutorials'
 import './App.css'
 
 function App() {
-    const version = 'v1.1.3' 
+    const version = 'v1.2.0-alpha' 
     const [scramble, setScramble] = useState('Loading...')
     const [page, setPage] = useState('home')
     const [algSet, setAlgSet] = useState('PLL')
@@ -180,6 +180,10 @@ function App() {
         if (event === 'pyram') return 'pyraminx'
         if (event === 'sq1') return 'square1'
         return event
+    }
+
+    function handleDelLast() {
+        setTime(time.slice(-1))
     }
     
     lockScreen()
@@ -362,6 +366,18 @@ function App() {
                                 margin: 0,
                                 fontSize: '11px'
                             }} onClick={preloadScramble}>Next Scr.</p>
+                            <p style={{
+                                width: '50px',
+                                height: '20px',
+                                alignSelf: 'center',
+                                justifySelf: 'center',
+                                backgroundColor: '#00FFFF',
+                                border: 'solid 2px #00CCCC',
+                                borderRadius: '5px',
+                                textAlign: 'center',
+                                boxShadow: '0 0 10px #00CCCC',
+                                margin: 0,
+                            }} onClick={handleDelLast}>Undo</p>
                         </div>
                         {showPopup && (
                             <Popup title='Reset Session?' message='Are you sure you want to reset this session?' onConfirm={handleReset} onCancel={() => setShowPopup(false)} />
